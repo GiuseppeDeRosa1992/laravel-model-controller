@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Dati da "config/data.php": {{ $home }}</h1>
-<p>This is my paragraph content.</p>
-<button class="btn btn-primary">Cliccami</button>
+    <h1>Quanti film ci sono nel Database: {{ count($movies) }}</h1>
+    <a href="">
+        <button class="btn btn-primary">Vai alle Card</button>
+    </a>
+    <a href="{{ route('movie') }}">
+        <button class="btn btn-primary">Vai alla lista Film</button>
+    </a>
 @endsection

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $dati = config("data");
-    return view('home', $dati);
-})->name("home");
+// ROTTA CHE MI STAMPA LA PAGINA HOME
+Route::get('/', [PageController::class, "home"])->name("home");
+
+//ROTTA CHE MI STAMPA LA PAGINA MOVIES I DATI STANNO DENTRO PAGECONTROLLER
+Route::get('/movies', [PageController::class, "movie"])->name('movie');
