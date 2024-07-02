@@ -6,6 +6,7 @@
                 <div class="card p-0 h-100">
                     <div class="row g-0 m-0">
                         <div class="col-md-4">
+                            {{-- qui uso il percorso che mi vado a prendere dal database dove ho aggiunto path_img al database che aveva passato luca --}}
                             <img src="{{ $movie->path_img }}" class="w-100 rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
