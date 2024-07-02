@@ -19,3 +19,6 @@ Route::get('/', [PageController::class, "home"])->name("home");
 
 //ROTTA CHE MI STAMPA LA PAGINA MOVIES I DATI STANNO DENTRO PAGECONTROLLER
 Route::get('/movies', [PageController::class, "movie"])->name('movie');
+
+//ROTTA CHE MI STAMPA LA PAGINA card_movie I DATI STANNO DENTRO PAGECONTROLLER
+Route::get('/card_movies', [PageController::class, "card"])->name('card_movie');

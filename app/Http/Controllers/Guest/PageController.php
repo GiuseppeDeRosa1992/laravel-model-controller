@@ -27,4 +27,13 @@ class PageController extends Controller
         ];
         return view('movies', $data);
     }
+
+    public function card()
+    {
+        $movies = Movie::all();
+        $data = [
+            "movies" => $movies
+        ];
+        return view('card_movies', $data);
+    }
 }

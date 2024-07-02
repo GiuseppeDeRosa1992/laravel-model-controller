@@ -10,12 +10,15 @@
 </head>
 
 <body>
+    {{-- INCLUDO HEADER DA PARTIALS.HEADER --}}
+    @include('partials.header')
 
-    <div class="container text-center">
-        @include('partials.header')
-
-        @yield('content')
-    </div>
+    {{-- MI CREO UN YELDS(CONTENT) CHE OGNI VOLTA RICHIAMO E METTO DENTRO COSE DIVERSE NELLE VARIE PAGINE TRAMITE @SECTION(CONTENT) --}}
+    <main>
+        <div class="container text-center p-0">
+            @yield('content')
+        </div>
+    </main>
 
 </body>
 
